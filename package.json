@@ -1,6 +1,6 @@
 {
   "name": "@plutotcool/payload-astro-preview",
-  "version": "0.0.0",
+  "version": "1.0.0-0",
   "description": "Signed draft preview sessions between a Payload CMS and an Astro site.",
   "license": "MIT",
   "author": "Bastien Robert <bastien@plutot.cool>",
