@@ -1,0 +1,7 @@
+dist
+pnpm-lock.yaml
+playground/astro/.astro
+playground/payload/.next
+playground/payload/*.db
+playground/payload/next-env.d.ts
+playground/payload/src/payload-types.ts

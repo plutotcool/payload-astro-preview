@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { getPage } from '../cms'
+
+export const prerender = false
+
+const { slug } = Astro.params
+const page = await getPage(slug!, { preview: Astro.locals.preview })
+
+if (!page) return new Response('Not found', { status: 404 })
+---
+
+<Layout title={page.title}>
+  <h1>{page.title}</h1>
+  {page._status === 'draft' && <p><em>Draft</em></p>}
+  <p>{page.body}</p>
+</Layout>

@@ -1,0 +1,17 @@
+{
+  "name": "playground-astro",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/node": "^11.0.2",
+    "@plutotcool/payload-astro-preview": "workspace:*",
+    "astro": "^7.1.3"
+  }
+}

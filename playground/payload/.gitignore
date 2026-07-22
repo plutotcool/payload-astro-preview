@@ -1,0 +1,4 @@
+.next/
+*.db
+*.db-journal
+next-env.d.ts

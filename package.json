@@ -1,0 +1,99 @@
+{
+  "name": "@plutotcool/payload-astro-preview",
+  "version": "0.0.0",
+  "description": "Signed draft preview sessions between a Payload CMS and an Astro site.",
+  "license": "MIT",
+  "author": "Bastien Robert <bastien@plutot.cool>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plutotcool/payload-astro-preview.git"
+  },
+  "homepage": "https://github.com/plutotcool/payload-astro-preview#readme",
+  "bugs": "https://github.com/plutotcool/payload-astro-preview/issues",
+  "prettier": "@plutotcool/prettier-config",
+  "keywords": [
+    "astro",
+    "astro-integration",
+    "payload",
+    "payload-plugin",
+    "preview",
+    "live-preview",
+    "draft"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./payload": {
+      "types": "./dist/payload/index.d.ts",
+      "import": "./dist/payload/index.js",
+      "default": "./dist/payload/index.js"
+    },
+    "./astro": {
+      "types": "./dist/astro/index.d.ts",
+      "import": "./dist/astro/index.js",
+      "default": "./dist/astro/index.js"
+    },
+    "./astro/middleware": {
+      "types": "./dist/astro/middleware.d.ts",
+      "import": "./dist/astro/middleware.js",
+      "default": "./dist/astro/middleware.js"
+    },
+    "./astro/routes/enter": {
+      "types": "./dist/astro/routes/enter.d.ts",
+      "import": "./dist/astro/routes/enter.js",
+      "default": "./dist/astro/routes/enter.js"
+    },
+    "./astro/routes/exit": {
+      "types": "./dist/astro/routes/exit.d.ts",
+      "import": "./dist/astro/routes/exit.js",
+      "default": "./dist/astro/routes/exit.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "pnpm build && pnpm --parallel --filter \"./playground/*\" dev",
+    "lint": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "release": "changelogen --release --push",
+    "prepublishOnly": "pnpm build"
+  },
+  "peerDependencies": {
+    "astro": "^5.0.0 || ^6.0.0 || ^7.0.0",
+    "payload": "^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "astro": {
+      "optional": true
+    },
+    "payload": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@plutotcool/prettier-config": "^1.1.0",
+    "astro": "^7.1.3",
+    "changelogen": "^0.6.2",
+    "payload": "3.84.1",
+    "prettier": "^3.9.6",
+    "tsdown": "^0.22.4",
+    "typescript": "^6"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.20.2 || >=20.9.0"
+  },
+  "packageManager": "pnpm@11.7.0"
+}

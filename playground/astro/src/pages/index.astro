@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+export const prerender = false
+---
+
+<Layout title="Playground">
+  <h1>Playground</h1>
+  <p>
+    Open a page in the Payload admin and hit the live preview tab. Documents are
+    served at <code>/[slug]</code>.
+  </p>
+  <p>Preview session: {Astro.locals.preview ? 'on' : 'off'}</p>
+</Layout>
