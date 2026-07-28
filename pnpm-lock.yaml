@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@plutotcool/prettier-config':
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.2.0
+        version: 1.2.0
       astro:
         specifier: ^7.1.3
         version: 7.1.3(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(@types/node@22.19.9)(jiti@2.7.0)(sass@1.77.4)(tsx@4.22.4)
@@ -1463,8 +1463,8 @@ packages:
   '@pinojs/redact@0.4.0':
     resolution: {integrity: sha512-k2ENnmBugE/rzQfEcdWHcCY+/FM3VLzH9cYEsbdsoqrvzAKRhUZeRNhAZvB8OitQJ1TBed3yqWtdjzS6wJKBwg==}
 
-  '@plutotcool/prettier-config@1.1.0':
-    resolution: {integrity: sha512-A/gh2WCeCEMeZK2JJYNKO2C5AXxnrIq3/gJoU8AB1ua6zNUMcAS/Vi80lqlqh+175Jw1jTgPQMGe+qUmitdllg==}
+  '@plutotcool/prettier-config@1.2.0':
+    resolution: {integrity: sha512-Eh9BnDOxU00ADN7mNhAtPDduQJkSit7o/2iyEWafSJrmbjrx32BOJid6OSJJY2HPFOCFLX3OWfeNwR0yk/ozVg==}
 
   '@preact/signals-core@1.14.4':
     resolution: {integrity: sha512-HNB6HYeYKhQbJ1aKl+YRjrS4+QWHLKX6qKoUsfS/m0vqzsVaEBiZiaKbG/e+NKk2ch5ALQr/ihWaMHxiCuuWHA==}
@@ -5237,7 +5237,7 @@ snapshots:
 
   '@pinojs/redact@0.4.0': {}
 
-  '@plutotcool/prettier-config@1.1.0': {}
+  '@plutotcool/prettier-config@1.2.0': {}
 
   '@preact/signals-core@1.14.4': {}
 

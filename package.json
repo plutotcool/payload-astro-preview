@@ -81,7 +81,7 @@
     }
   },
   "devDependencies": {
-    "@plutotcool/prettier-config": "^1.1.0",
+    "@plutotcool/prettier-config": "^1.2.0",
     "astro": "^7.1.3",
     "changelogen": "^0.6.2",
     "payload": "^3.86.0",

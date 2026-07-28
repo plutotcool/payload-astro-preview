@@ -1,7 +1,13 @@
+.next
+.astro
+.turbo
 dist
+CHANGELOG.md
 pnpm-lock.yaml
 playground/astro/.astro
 playground/payload/.next
 playground/payload/*.db
 playground/payload/next-env.d.ts
 playground/payload/src/payload-types.ts
+playground/payload/src/app/(payload)/layout.tsx
+playground/payload/src/app/(payload)/admin/importMap.js
